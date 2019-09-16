@@ -1,13 +1,17 @@
 # concrete content
 ## Introduction [Artifical Neural Network](https://en.wikipedia.org/wiki/Artificial_neural_network)
-[Optimization](https://en.wikipedia.org/wiki/Gradient_descent)
+
+	[Optimization](https://en.wikipedia.org/wiki/Gradient_descent)
+	
 	**Brief**: Input -> Process layer 1 2 3 ......-> Results
 			result provide feedback (reward) 
 			Activation function
 			example(Training data) -> Training
 			final(testing data) -> testing
+	
 	**Definition**: Artifical neural network(ANN) is a collection of connected artifician neurons, which inspired by Bio-neural network.
 	supervised or not: manualley labeld or not
+	
 	**Method**: primarily focus on oprimization method 
 			Gradient Descent
 			Cost function
@@ -27,7 +31,8 @@
 
 	usage: prediction
 
-	overfitting line [more](https://en.wikipedia.org/wiki/Overfitting)
+	overfitting line 
+[more](https://en.wikipedia.org/wiki/Overfitting)
 	underfitting line
 
 ## Basis Architecture
@@ -38,9 +43,14 @@
 	3. output
 	4. Gradient Descent optimize metrics......
 
-	![Gradient Descent](https://www.tensorflow.org/images/tensors_flowing.gif)
-	Format: ![Alt Text](url)
+![Gradient Descent](https://www.tensorflow.org/images/tensors_flowing.gif)
 
 #### tensor flow basis coding
-	
 
+	key idea of TF: error back-propagation algorithm through optimization method
+	optimization method this time: gradient descent
+
+[Full Code](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf5_example2/full_code.py)
+
+#### tf session
+ 
