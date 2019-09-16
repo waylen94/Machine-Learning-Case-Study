@@ -52,5 +52,16 @@
 
 [Full Code](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf5_example2/full_code.py)
 
-#### tf session
+#### tf Session
+
+#### tf Variable
  
+#### tf Placeholder
+
+#### tf Activation Function
+
+#### manual add layer
+
+#### Basis TensorFlow
+
+https://morvanzhou.github.io/tutorials/machine-learning/tensorflow/3-2-create-NN/
