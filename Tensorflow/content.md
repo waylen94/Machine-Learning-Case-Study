@@ -84,5 +84,58 @@ overview graph:       as well as components graph:
 [Full code]()
 
 ## Advanced Content
-1. 
+1. classification solution case
+	regression problem sovling -> output value
+	classification problem solving -> output possiblity
+
+	activation function:
+		regression using relu
+		classification using softmax
+
+	cost function:
+		regression: real - prediction
+		classification: cross_entropy
+
+	optimizer: both gradient descent
+
+[Full code]()
+
+2. solving overfitting
+![diagram from MOFAN](https://morvanzhou.github.io/static/results/tensorflow/5_02_1.png)
+	For general situation rather than specific training data
+	states: underfit just_right overfit
+	Tensorflow solve: drop out
+[Full code]()
+
+3. Convoltutional neural network(CNN)
+	Purpose: image text vedio (computer vision recognization
+	
+	Method: object Components.s.s -> combine -> combine ..->.->.... -> object classfied
+
+	pooling? 
+
+	example: image->covolution->max pooling->connected -> classified
+
+[great resource](https://classroom.udacity.com/courses/ud730/lessons/6377263405/concepts/64063017560923)
+4. CNN buidling 1
+	**code concept**:image recognition, gradually compress hight and width in order to increase thickness (processing data in validation below 'cp') 
+	**Overview picture in example**:
+
+	image -> convolutionary -> pooling (cp)-> cp .......-> tensorflow(fully connected tf) -> tf -> classifer  
+
+	key attribute in code: patch(compression related with padding) stride(step related pooling)
+
+	padding method: valid padding ; same padding
+	pooling method: max pooling ; average pooling
+
+5. CNN building 2
+	TensorFlow Libraries implment CNN
+	conv2a function
+	pooling module
+	padding module
+	key features: stride, patch, padding, pooling 
+[Full code]()
+
+6. CNN building 3
+	
 
