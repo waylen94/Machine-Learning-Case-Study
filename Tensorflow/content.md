@@ -137,5 +137,19 @@ overview graph:       as well as components graph:
 [Full code]()
 
 6. CNN building 3
+	feeling: capture data -> reframe(reshape) data -> optimizer data
+	practical: padding, pooling, conv2d, adamoptimizer 
+
+[Full code]()
+
+7. Saver
+
+	purpose: store the trained parameter like(weights and biases)
+	issue: save parameters -> reload parameters
+	key: tf.train.saver
+
+[Full code]()
+
+8. Recurrent Neural Network (RNN) 1
 	
 
