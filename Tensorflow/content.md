@@ -58,9 +58,9 @@
 [Full Code](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf5_example2/full_code.py)
 
 #### tf Session
-
+[FuLL Code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_UseCase_session.py)
 #### tf Variable
- 
+[Full Code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_UseCase_variable.py)
 #### tf Placeholder
 
 #### tf Activation Function
@@ -68,14 +68,14 @@
 
 
 #### manual add layer
-[Full code]()
+[Full code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_add_layer.py)
 
 
 #### Basis TensorFlow
 	1. basis architecture
-[Full Code]()
+[Full Code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0917_basis_architecture.py)
 	2. visualization
-[Full code]()
+[Full code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0917_basis_architecture_visualization.py)
 	
 
 
@@ -95,7 +95,8 @@
 #### Tensorboard
 inputs -> layer 1 2 3 4..... ->outputs
 overview graph:       as well as components graph:
-[Full code]()
+[Full code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0917_tensorboard.py)
+[Full code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0917_tensorboard2.py)
 
 
 
@@ -114,14 +115,14 @@ overview graph:       as well as components graph:
 
 	optimizer: both gradient descent
 
-[Full code]()
+[Full code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0917_advanced_classification.py)
 
 2. solving overfitting
 ![diagram from MOFAN](https://morvanzhou.github.io/static/results/tensorflow/5_02_1.png)
 	For general situation rather than specific training data
 	states: underfit just_right overfit
 	Tensorflow solve: drop out
-[Full code]()
+[Full code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0917_advanced_overfitting.py)
 
 3. Convoltutional neural network(CNN)
 	Purpose: image text vedio (computer vision recognization
@@ -153,13 +154,13 @@ overview graph:       as well as components graph:
 	pooling module
 	padding module
 	key features: stride, patch, padding, pooling 
-[Full code]()
+[Full code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0917_advanced_CNN2.py)
 
 6. CNN building 3
 	feeling: capture data -> reframe(reshape) data -> optimizer data
 	practical: padding, pooling, conv2d, adamoptimizer 
 
-[Full code]()
+[Full code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0917_advanced_CNN3.py)
 
 7. Saver
 
@@ -167,7 +168,7 @@ overview graph:       as well as components graph:
 	issue: save parameters -> reload parameters
 	key: tf.train.saver
 
-[Full code]()
+[Full code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0917_advanced_saver.py)
 
 8. Recurrent Neural Network (RNN) 1
 	key: order matter issue solutions (sentence)
@@ -204,7 +205,7 @@ RNN LSTM
 	'''
 	difficulties: time_major, transpose
 
-[Full Code]()
+[Full Code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0919_advanced_RNN_1.py)
 	
 
 Noremal style or Tensorflow style
@@ -236,14 +237,14 @@ Noremal style or Tensorflow style
 RNN key: Truncate Backpropagration  Again:
 [Extensive BPTT](https://r2rt.com/styles-of-truncated-backpropagation.html)
 
-[Full Code]()
+[Full Code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0919_advanced_RNN_2.py)
 
 
 11. Recurrent Neural Network (RNN) 4 Visualization
 	
 	plt_plot()
 
-[Full Code]()
+[Full Code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0919_advanced_Aensorflow_visualization.py)
 
 
 12. Autoencoder
@@ -257,7 +258,7 @@ RNN key: Truncate Backpropagration  Again:
 
 	difficulties: learning rate
 
-[Full Code]()
+[Full Code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0919_advanced_Autoencoder.py)
 
 13. Scope
 	corresponded with variable
@@ -276,13 +277,16 @@ RNN key: Truncate Backpropagration  Again:
 		scope.reuse_variables()
 
 	'''
-[Full Code]()
+[Full Code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0919_advanced_scope0.py)
+[Full Code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0919_advanced_scope.py)
+
+
 
 14. Batch Normalization (BN)
 	significance: if not, neurons lose efficacy, sensor capacity vanish
 	procedure:forwarding layer process BN after every time activation function
 
-[Full Code]()
+[Full Code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0919_advanced_BatchNormalization.py)
 
 
 [extensive resource](https://arxiv.org/abs/1502.03167)
