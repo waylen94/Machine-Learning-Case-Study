@@ -65,14 +65,21 @@
 
 #### tf Activation Function
 
+
+
 #### manual add layer
 [Full code]()
+
+
 #### Basis TensorFlow
 	1. basis architecture
 [Full Code]()
 	2. visualization
 [Full code]()
 	
+
+
+
 #### Speeding up training and Optimizer
 	1. stochastic Gradient Descent(SGD)
 	2. Momentum (using push) 
@@ -83,10 +90,14 @@
 ![diagram](http://cs231n.github.io/assets/nn3/opt1.gif)
 [more link](http://cs231n.github.io/neural-networks-3/)
 
+
+
 #### Tensorboard
 inputs -> layer 1 2 3 4..... ->outputs
 overview graph:       as well as components graph:
 [Full code]()
+
+
 
 ## Advanced Content
 1. classification solution case
