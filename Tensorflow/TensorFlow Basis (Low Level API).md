@@ -12,9 +12,9 @@
 
 
 ## Introduction
-Tensorflow core	**Purpose**: Csutomized Tensorflow program tensorflow runtime operation
+Tensorflow core	**Purpose**: Csutomized the own Tensorflow program, tensorflow runtime, operation
 
-Hight level **components**: datasets, layers, feature columns, training loop
+Hight level **components** in this low level environment: datasets, layers, feature columns, training loop
 
 **Tensor values**: A tensor consists of a set of primitive value shaped into an array of any number of dimensions
 	tensor units: rank shape
