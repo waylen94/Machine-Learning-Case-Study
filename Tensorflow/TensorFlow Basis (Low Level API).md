@@ -2,10 +2,10 @@
 	Tensor flow Core
 [Learning Resource](https://www.tensorflow.org/guide/low_level_intro)
 
-- [ ] Introduction
-- [ ] Tensors
-- [ ] Variables
-- [ ] Graphs and Sessions
+- [x] Introduction ------------20190920 
+- [x] Tensors -----------------20190920
+- [x] Variables ---------------20190921
+- [x] Graphs and Sessions -----20190921
 - [ ] Save and Restore
 - [ ] Control Flow
 - [ ] Ragged Tensors
