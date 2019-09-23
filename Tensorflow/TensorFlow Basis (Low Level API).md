@@ -59,6 +59,8 @@ A **placeholder** is a promise to provide a value later like function argument
 
 	tf.train.Optimizer()
 
+
+
 ## Tensors
 run computations involving tensors
 
