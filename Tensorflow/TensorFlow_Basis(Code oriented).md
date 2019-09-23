@@ -7,9 +7,9 @@
 - [x] Tensors -----------------20190920
 - [x] Variables ---------------20190921
 - [x] Graphs and Sessions -----20190921
-- [x] Save and Restore --------20190922
-- [x] Control Flow ------------20190922
-- [x] Ragged Tensors ----------20190922
+- [ ] Save and Restore
+- [ ] Control Flow
+- [ ] Ragged Tensors
 
 
 ## Introduction
@@ -161,30 +161,14 @@ placting operations on different devices tf.device
 
 
 ## Save and Restore
-	tf.train.Saver    operating **save** and **restore**
 
-	**Save and Restore variables**
-		tf.train.Saver
-			tf.train.Saver.save
-			tf.train.Saver.restore
 
-	**Specific variables to save and restore**
-
-	**Inspect variables in a checkpoint**
-
-	**save and restore model**
-
-	**Build and load a SavedModel** Model can be used in other infrastructure (device) based framework
-		~~more about save restore model~~
-		
 ## Control Flow
-	~~Content~~
-	Graph code?????????
 
 
 ## Ragged Tensors
-	~~Content~~
-	Tensor? Ragged?????????????
+
+
 
 
 
