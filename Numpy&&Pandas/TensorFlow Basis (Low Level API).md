@@ -1,17 +1,20 @@
 # Numpy Basis
 **Attribute**
+
 	dimension
 	shape
 	size
 
 **Create**
+
 	dtype
 	arange
 	reshape
 	linspace
 
 **Operation**
-	dot production
+
+	Dot production
 	sum
 	min
 	max
