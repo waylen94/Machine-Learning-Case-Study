@@ -6,7 +6,9 @@
 """
 Please note, this code is only for python 3+. If you are using python 2+, please modify the code accordingly.
 """
+
 from __future__ import print_function
+
 import tensorflow as tf
 import numpy as np
 
