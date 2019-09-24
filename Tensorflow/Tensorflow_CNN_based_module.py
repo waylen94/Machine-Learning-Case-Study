@@ -44,7 +44,6 @@ def tensorflow_basis():
         if step % 20 == 0:
             print(step, sess.run(weights), sess.run(biases))
             
-
 #Basis variable assignment 
 def tensorflow_basis_assign():    
     
@@ -67,6 +66,9 @@ def tensorflow_basis_assign():
     
     return None
 
+# layer
+
+
 def tensorflow_basis_architecture():
     '''
         add one more layer and return the output of this layer
@@ -85,14 +87,17 @@ def tensorflow_basis_architecture():
             
         return outputs
     
+    
     x_data = np.linspace(-1, 1, 300)[:, np.newaxis]   # simulated with some real data
     noise = np.random.normal(0, 0.05, x_data.shape)
     y_data = np.square(x_data) - 0.5 + noise
     
     xs = tf.compat.v1.placeholder(tf.float32, [None, 1])
     ys = tf.compat.v1.placeholder(tf.float32, [None, 1])
+    
     # add hidden layer
     l1 = add_layer(xs, 1, 10, activation_function=tf.nn.relu)
+    
     # add output layer
     prediction = add_layer(l1, 10, 1, activation_function = None)
     
@@ -111,9 +116,11 @@ def tensorflow_basis_architecture():
         sess.run(train_step, feed_dict={xs: x_data, ys: y_data})
         
         if i % 50 ==0:
+            
             print(sess.run(loss,feed_dict={xs: x_data, ys: y_data}))
   
     return None
+
 
 def tensorflow_basis_architecture_visualization():
     def add_layer(inputs, in_size, out_size, activation_function):
@@ -398,10 +405,10 @@ def tensorflow_davanced_RNN():
     return None
 
 if __name__ == '__main__':
-    tensorflow_basis_20190923()
+#     tensorflow_basis()
     
-#     tensorflow_basis_assign_20190923()
-#     tensorflow_basis_architecture()
+#     tensorflow_basis_assign()
+    tensorflow_basis_architecture()
 #     tensorflow_basis_architecture_visualization()
 #     tensorflow_advanced_classification() 
 
