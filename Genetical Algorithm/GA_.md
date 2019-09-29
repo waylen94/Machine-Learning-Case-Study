@@ -9,6 +9,7 @@ Biological Evolution
 3. Mutation
 
 Terminology:
+
 	Fitness: objective function
 	Individuals: Apply fitness function
 	Populations and Generations: array of individuals
@@ -32,18 +33,21 @@ Populations from Indicidual from Chromosome from Gene
 
 Start
 Generate the initial population
-Compute fitness
-Repeat
-	Selection
-	Crossover
-	Mutation
-	Compute Fitness
 
-	Until population has converged
-		Stop
+	Compute fitness
+	Repeat
+		Selection
+		Crossover
+		Mutation
+		Compute Fitness
+
+		Until population has converged
+			Stop
 
 **Morvan Version Code**
+
 Functions:
+
 	get_fitness
 	translateDNA
 	select
@@ -51,6 +55,7 @@ Functions:
 	mutate
 
 Attributes:
+
 	DNA_size
 	Pop_size
 	Cross_Rate
@@ -63,19 +68,23 @@ Attributes:
 
 
 [GA based String Matching Algorithm](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Genetical%20Algorithm/Genetic%20Algorithm_string_match.py)
+
 Key: ASCII
 
 
 [Travel Sales Problem(TSP)](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Genetical%20Algorithm/Genetic%20Algorithm_Travel_Sales.py)
+
 key: DNA encode with Traveling order
 
 
 
 [Microbial Generical Problem](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Genetical%20Algorithm/Genetic%20Algorithm_Microbial_GA.py)
+
 key: Elitism fixed
 
 
 **Advance GA -> Evolution Strategy**
+
 [basis ES code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Genetical%20Algorithm/Evolution%20strategy.py)
 
 
@@ -85,10 +94,13 @@ key: Elitism fixed
 
 
 **Current Natural Evolutionary Strategy (NES) + Policy gradient**
+
 Mathmatics is essential
+
 1. Average 
 2. Standard Deviation
 3. Covariance Matrix
+
 
 [Neural Network Gradient Descent meet with Genetical Algorithm](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Genetical%20Algorithm/Evolution%20strategy_gradient.py)
 
