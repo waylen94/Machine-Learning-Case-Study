@@ -6,11 +6,11 @@ Generator
 
 	Initial random network topology base on binary
 
-	'''python
+	```python
 		def generator(self, random, args):
-        candidate = [random.choice([0, 1]) for _ in range(0, self.dimension_bits)]
-        return candidate
-	'''
+	        candidate = [random.choice([0, 1]) for _ in range(0, self.dimension_bits)]
+	        return candidate
+	```
 
 Evaluator
 
