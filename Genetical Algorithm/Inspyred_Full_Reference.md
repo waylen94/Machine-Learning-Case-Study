@@ -68,7 +68,7 @@ III.	Benchmark problems
 3.	Multi-objective Benchmark
 4.	Discrete Optimization Benchamrks
 
-I.	1. ec-Evolutionary computation framework 
+#	1. ec-Evolutionary computation framework 
 
 A framework creating evolutionary computation
 
@@ -144,7 +144,7 @@ Class inspyred.ec.SA(random)
 Simulated annealing
 Key: selection, Gaussian mutation, simulated annealing replacement, candidate solution of real values
 
-emo (Evolutionary multi-objective optimization)
+### emo (Evolutionary multi-objective optimization)
 	Framework making multi objective evolutionary computation 
 Class inspyred.ec.emo.NSGA2
 Non-dominated sorting genetic algorithm of Kalyanmoy Deb et al.
@@ -159,7 +159,7 @@ Pareto multi-objective solution
 Key: better rely on if it is better than or equal to the other solution in all objectives and strictly better in at least one objective
 
 
-I3.analysis ---optimization result analysis
+### .analysis ---optimization result analysis
 Analysis methods for the results of evolutionary computations
 
 Inspyred.ec.analysis.allele_plot(file, normalize=false,alleles=None,generation=None)
@@ -175,7 +175,7 @@ Inspyred.ec.analysis.hypervolume(pareto_set,reference_point=None)
 Calculates hypervolume by slicing objectives (HSO)
 [resource](                 )
 
-I4. Utilities ------optimization utility functions
+### Utilities ------optimization utility functions
 
 Class inspyred.ec.utilities.objectify(func)
 Key: provide each object own set of independent attributes
@@ -185,7 +185,8 @@ Cache a function’s return value each time’s called instead of being re-evalu
 
 
 
-# Operators 
+### Operators 
+
 1.	Arcchiver  store separate solution
 2.	Evaluator  fitness value
 3.	Generator  generate new candidates
@@ -197,7 +198,8 @@ Cache a function’s return value each time’s called instead of being re-evalu
 9.	Variators  modify candidate
 
 
-1.	Archivers
+###	Archivers
+
 General arguments:
 1.	Random
 2.	Population
@@ -218,7 +220,7 @@ Do nothing
 Inspyred.ec.archivers.population_archivers(1,2,3,4)
 Meaning: replace archive with pop
 
-2.	Evaluator
+###	Evaluator
 General arguments:
 1.	Candidates
 2.	Args
@@ -231,7 +233,7 @@ Multiprocessing evaluation
 Inspyred.ec.evaluators.parallel_evaluation_pp(1,2)
 Parallel python evaluation
 
-3.	Generators
+###	Generators
 Create initial set of candidates
 General arguments
 1.	Random 
@@ -242,7 +244,7 @@ Ensure uniqueness
 Inspyred.ec.generaors.Strategize(generator)
 Extend candidate with strategy parameters
 
-4.	migrators
+### migrators
 
 return uploaded population
 general arguments
@@ -257,7 +259,7 @@ multiprocessing migration
 inspyred.ec.migrators.default_migration(1,2,3)
 do nothing return existing pop
 
-4.	5. Observers
+### Observers
 General arguments:
 Population 
 Num_generations
@@ -273,7 +275,7 @@ Inspyred.ec.observers.plot_observer
 Inspyred.ec.observers.population_observer 
 Inspyred.ec.observers.stats_observer 
 
-5.	6. Replacers
+### Replacers
 Survivor mechanism
 General arguments:
 1.	Random
@@ -319,37 +321,7 @@ Key: keep at least individuals in the existing population
 Truncation_replacement(1,2,3,4,5)
 Key: Best replaced from current population and offspring
 
-6.	7. 
-7.	Selectors 
-Parent selection   return list of selected individuals
-General arguments: 1. Random
-			2.Population
-			3.args
-Prefix: inspyred.ec.selectors
-
-Default_selection(1,2,3)
-Return population as selected
-
-Fitness_proportionate_selection(1,2,3)
-Stochastically chooses fitness probability based proportional individuals
-Return fitness proportionate sampling
-
-Rank_selection(1,2,3)
-Raw fitness determine rank choose individuals 
-Return a rank based sampling
-
-Tournament_selection(1,2,3)
-Return tournament sampling
-Random sample,  tournament to best a selected
-
-Truncation_selection(1,2,3)
-Return best individuals
-
-Uniform_selection(1,2,3)
-Uniform selection by randomly choosing
-
-
-8.	terminators
+###	terminators
 return Boolean value true for ending
 general arguments:
 1.	population
@@ -382,7 +354,7 @@ when elapsed time meet
 user_termination(1,2,3,4)
 when user press key to
 
-9.	variators
+###	variators
 return the list of modified individuals
 general arguments:
 1.	random
@@ -463,7 +435,7 @@ Key: randomly choosing new values
 Scramble_mutation(1,2,3)
 Key: randomly location -> scramble the sliced value
 
-II.	 Swarm Intelligence
+#	 Swarm Intelligence
 
 Class inspyred.swarm.ACS (random, components)
 Ant Colony system discrete optimization
@@ -495,7 +467,7 @@ Benchmark optimization function
 3.	Multi-objective benchmarks
 4.	Discrete optimization benchmarks
 
-1.	benchmarks
+##	benchmarks
 Class inspyred.benchmark(dimensions, objectives = 1)
 Abstract class define global optimization problem
 			Generator(candidates, args)
@@ -507,7 +479,7 @@ Class inspyred.benchmarks.Binary(benchmark, dimension_bits)
 	Existing benchmark problem
 		Represent by binary
 
-2.	single-objective benchmarks
+##	single-objective benchmarks
 
 class inspyred.benchmarks.Ackley(dimensions=2)
 Ackley benchmark problem (global optimization problem)
@@ -527,7 +499,7 @@ Schwefel benchmark
 Class inspyred.benchamrks.Sphere(dimensions = 2)
 Sphere benchmark
 
-3.	multi-objective benchmarks
+##	multi-objective benchmarks
 class inspyred.benchmarks.Kursawe(dimensions = 2)
 kursawe multiobjective benchmark
 key: n-dimensions to two dimensions
@@ -535,7 +507,7 @@ key: n-dimensions to two dimensions
 class inspyred.benchmarks.DTLZ1-2-3-4-5-6-7
 N-dimensional inputs to m-dimensional outputs
 
-4.	discrete optimization benchmarks
+##	discrete optimization benchmarks
 class inspyred.benchmarks.Knapsack(capacity, items, duplicates = false)
 knapsack benchmark
 key: find the set of maximal value 
