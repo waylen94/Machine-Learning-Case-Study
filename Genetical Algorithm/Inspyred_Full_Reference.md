@@ -16,57 +16,64 @@ II customized
 III advanced 
 
 I.	Standard Algorithm
-1.	Genetic algorithm
-2.	Evolution strategy
-3.	Simulated annealing
-4.	Differential evolution algorithm
-5.	Estimation of distribution algorithm
-6.	Pareto archived evolution strategy (PAES)
-7.	Non-dominated sorted genetic algorithm (NSGA II)
-8.	Particle swarm optimization
-9.	Ant colony optimization
+	1.	Genetic algorithm
+	2.	Evolution strategy
+	3.	Simulated annealing
+	4.	Differential evolution algorithm
+	5.	Estimation of distribution algorithm
+	6.	Pareto archived evolution strategy (PAES)
+	7.	Non-dominated sorted genetic algorithm (NSGA II)
+	8.	Particle swarm optimization
+	9.	Ant colony optimization
 
 II.	Customized algorithm
-1.	Custom evolutionary computation
-2.	Custom archive
-3.	Custom observer
-4.	Custom replacer
-5.	Custom selector
-6.	Custom terminator
-7.	Custom variator
+
+	1.	Custom evolutionary computation
+	2.	Custom archive
+	3.	Custom observer
+	4.	Custom replacer
+	5.	Custom selector
+	6.	Custom terminator
+	7.	Custom variator
  
 III.	Advanced usage
-1.	Discrete optimization
-2.	Evaluating individuals concurrently
-3.	Island models
-4.	Replacement via Niching
+
+	1.	Discrete optimization
+	2.	Evaluating individuals concurrently
+	3.	Island models
+	4.	Replacement via Niching
 
 
 Library reference
 
 I.	Library reference – Evolutionary computation
+
 1.	ec
 2.	emo
 3.	analysis
 4.	utilities
 5.	operators
-a.	archivers
-b.	evaluators
-c.	generators
-d.	migrators
-e.	observers
-f.	replacers
-g.	selectors
-h.	terminators
-i.	variators
+		a.	archivers
+		b.	evaluators
+		c.	generators
+		d.	migrators
+		e.	observers
+		f.	replacers
+		g.	selectors
+		h.	terminators
+		i.	variators
+
 II.	Swarm intelligence
-1.	Swarm
-2.	topologies
+
+	1.	Swarm
+	2.	topologies
+
 III.	Benchmark problems
-1.	Benchmarks
-2.	Single-objective Benchmark
-3.	Multi-objective Benchmark
-4.	Discrete Optimization Benchamrks
+
+	1.	Benchmarks
+	2.	Single-objective Benchmark
+	3.	Multi-objective Benchmark
+	4.	Discrete Optimization Benchamrks
 
 #	1. ec-Evolutionary computation framework 
 
