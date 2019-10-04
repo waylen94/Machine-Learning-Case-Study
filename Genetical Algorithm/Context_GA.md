@@ -1,4 +1,4 @@
-#Genetical Algorithm Context with current Code
+# Genetical Algorithm Context with current Code
 
 	Fixed interval GA -> runcase -> problemGen
 
