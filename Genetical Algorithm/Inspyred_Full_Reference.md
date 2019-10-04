@@ -1,19 +1,13 @@
-#Genetical Algorithm
+# Genetical Algorithm Inspyred Library full reference Weilun's learning-record 
 
-**resource from Au.mathworks**
-
-Tutorial section
-
-Evolving polygons
-
-Lunar explorer
-Space probe(orbital, height, mass, boost velocity, initial velocity)
+Example section
 
 
-Examples section
-I standard
-II customized
-III advanced 
+# Content context:
+
+I. standard
+II. customized
+III. advanced 
 
 I.	Standard Algorithm
 	1.	Genetic algorithm
@@ -43,6 +37,11 @@ III.	Advanced usage
 	3.	Island models
 	4.	Replacement via Niching
 
+Code example:
+[Evolving polygons]
+[Lunar explorer]
+
+	Space probe(orbital, height, mass, boost velocity, initial velocity)
 
 Library reference
 
@@ -114,12 +113,12 @@ Class inspyred.ec.EvolutionaryComputation(random)
 
 	General 
 	Function evolve(generator,
-					Evaluator,
-					 pop_size=100,
-					 seeds=None,
-					 maximize=true,
-					 bounder=None,
-					 args)
+			Evaluator,
+			pop_size=100,
+			seeds=None,
+			maximize=true,
+			bounder=None,
+			args)
 
 
 	Generator generate candidate
