@@ -15,7 +15,7 @@ final_pop = ea.evolve(generator=prob_bi.generator,
 
 ```
 
-Generator 
+## Generator 
 
 	Initial random network topology base on binary
 
@@ -27,7 +27,7 @@ Generator
 
 ```
 
-Evaluator
+## Evaluator
 
 	Decode – network 
 		Return fitness considered by Pareto multi-objective (decoy path, defense cost, MTTSF)
@@ -55,20 +55,20 @@ Evaluator
         return fitness
 ```
 
-Observer
+## Observer
 
 	None
 ```python
 
 ```
 
-Terminator
+## Terminator
 
 	Inspyred.ec.terminators.generation_termination
 ```python
 	ea.terminator = [inspyred.ec.terminators.generation_termination]
 ```
-Selector
+## Selector
 
 	NSGA2 based Tournament_selection
 ```python
@@ -112,7 +112,7 @@ Selector
 
     
 ```
-Variator
+## Variator
 
 	Crossover: n-point-crossover
 	Mutation: bit_flip_mutation
@@ -121,7 +121,7 @@ Variator
                    inspyred.ec.variators.bit_flip_mutation]
 ```
 
-Replacer
+## Replacer
 
 	NSGA2_nsga_replacement
 ```python
@@ -195,14 +195,14 @@ Replacer
     return survivors
 ```
 
-Migratory
+## Migratory
 
 	None- server for multi-population typically for island model
 ```python
 
 ```
 
-Archiver 
+## Archiver 
 
 	NSGA2 based best-archiver
 ```python
