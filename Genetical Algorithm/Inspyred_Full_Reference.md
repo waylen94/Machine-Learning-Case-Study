@@ -85,6 +85,10 @@ Class inspyred.ec.Bounder (lower, upper)
 
 	Meaning: evolutionary operators respect the legal bounds for candidates 
 
+	'''
+		
+	'''
+
 
 Class inspyred.ec.DiscreteBounder(values)
 
