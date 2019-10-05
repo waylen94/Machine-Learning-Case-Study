@@ -1,9 +1,9 @@
 # Tensorflow
 
 Study List
-- [ ] 1. Introduction
-- [ ] 2. Preparation
-- [ ] 3. Basis architecture
-- [ ] 4. Construct basic tensorflow
-- [ ] 5. Tensorboard a tensorflow visualization tool
-- [ ] 6. Advance content
+- [x] 1. Introduction
+- [x] 2. Preparation
+- [x] 3. Basis architecture
+- [x] 4. Construct basic tensorflow
+- [x] 5. Tensorboard a tensorflow visualization tool
+- [x] 6. Advance content
