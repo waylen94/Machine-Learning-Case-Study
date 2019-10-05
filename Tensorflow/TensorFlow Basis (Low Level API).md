@@ -13,36 +13,52 @@
 
 
 ## Introduction
-Tensorflow core	**Purpose**: Csutomized the own Tensorflow program, tensorflow runtime, operation
+Tensorflow core	
 
-Hight level **components** in this low level environment: datasets, layers, feature columns, training loop
+**Purpose**: Csutomized the own Tensorflow program, tensorflow runtime, operation
+
+Hight level 
+
+**components** in this low level environment: datasets, layers, feature columns, training loop
 
 **Tensor values**: A tensor consists of a set of primitive value shaped into an array of any number of dimensions
 	
 	tensor units: rank shape
 
-**WalkThough** 1. Building graph 2. Running
+**WalkThough** 
+
+1. Building graph 2. Running
 	
 	graph consists of: tf.Operation (nodes) + tf.Tensor (edges)
 
-A **session** encapsulates the state of the TensorFlow runtime; TensorFlow operations
+A **session** 
 
-A **placeholder** is a promise to provide a value later like function argument
+encapsulates the state of the TensorFlow runtime; TensorFlow operations
+
+A **placeholder** 
+
+is a promise to provide a value later like function argument
 	
 	feed_dict = { }
 
-**Datasets** tf.data streaming data into a model 
+**Datasets** 
+
+tf.data streaming data into a model 
 	
 	importing Data
 
-**Layers** Modify values in the graph to get new outputs with the same inputs
+**Layers** 
+
+Modify values in the graph to get new outputs with the same inputs
 	
 	package both (variables + operations)
 		Creating initializing executing
 
 **Feature** ??????????????????????????????????
 
-**Training** Classification && Regression model
+**Training** 
+
+Classification && Regression model
 	
 	Sample: I. Define data -> II. Define Model -> III. Loss -> IV. Training
 
@@ -53,7 +69,9 @@ A **placeholder** is a promise to provide a value later like function argument
 
 	Mean Square error, a standard loss for regression problems
 
-**Optimizers:**  Standard optimization algorithm
+**Optimizers:**  
+
+Standard optimization algorithm
 	
 	They incrementally change each variable in order to minimize the loss
 
@@ -68,7 +86,9 @@ run computations involving tensors
 	
 	Properties: data type ; data shape
 
-**Rank:**  number of dimensions
+**Rank:**  
+
+number of dimensions
 	
 	Synonyms: order, degree, n-dimension
 
@@ -81,7 +101,9 @@ run computations involving tensors
 
 	tf.rank()
 
-**Shape:** number of elements in each dimension
+**Shape:** 
+
+number of elements in each dimension
 	tensorflow -- number of elements -- product of sizes of all its shapes
 	
 	tf.reshape: keeping its elements fixed, changing shape
@@ -93,7 +115,9 @@ run computations involving tensors
 ## Variables
 represent shared, persistent, state manipulated by the program
 
-**Creating** tf.get_variable('name',shape)
+**Creating**
+
+tf.get_variable('name',shape)
 
 	Variable collections: Access disconnected parts of a atensor flow program
 
@@ -114,12 +138,17 @@ represent shared, persistent, state manipulated by the program
 
 ## Graphs and Sessions
 
-**Concept**: dataflwo graph represent your comutationin terms of the dependencies between individual operations 
+**Concept**: 
+
+dataflwo graph represent your comutationin terms of the dependencies between individual operations 
 
 **low level programming model** 
+		
 		Define dataflow graph -> create Tensorflow session -> run
 
-**reason of dataflow graphs** Dataflow: common programming model for parallel computing 
+**reason of dataflow graphs** 
+
+Dataflow: common programming model for parallel computing 
 
 	nodes: units off computation 
 	edges: data consumed or produced by a computation 
@@ -138,10 +167,13 @@ Building tf.graph
 
 	providing Default graph as implicit arguments to All API function in some context
 
-**Naming operations** automatically or name-scope
+**Naming operations** 
+
+automatically or name-scope
 placting operations on different devices tf.device
 
 **tensor like objects** 
+
 	tf.Tensor 
 	tf.Variable 
 	numpy.ndarray
@@ -153,20 +185,25 @@ placting operations on different devices tf.device
 	str
 
 **Executing agraph in tf.Session**
+
 	Operation Procedure
 
 		tf.Session() as sess:
 			sess.run()
 
-**TensorBoard** Graph visualizer
+**TensorBoard** 
+
+Graph visualizer
 
 **Multiple Graphs Programming**
 
 
 ## Save and Restore
+
 	tf.train.Saver    operating **save** and **restore**
 
 **Save and Restore variables**
+
 		tf.train.Saver
 			tf.train.Saver.save
 			tf.train.Saver.restore
@@ -177,16 +214,21 @@ placting operations on different devices tf.device
 
 **save and restore model**
 
-**Build and load a SavedModel** Model can be used in other infrastructure (device) based framework
-		~~more about save restore model~~
+**Build and load a SavedModel** 
+
+Model can be used in other infrastructure (device) based framework
+
+~~more about save restore model~~
 		
 ## Control Flow
-	~~Content~~
+
+~~Content~~
 	Graph code?????????
 
 
 ## Ragged Tensors
-	~~Content~~
+
+~~Content~~
 	Tensor? Ragged?????????????
 
 
