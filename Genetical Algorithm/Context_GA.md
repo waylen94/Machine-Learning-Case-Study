@@ -2,6 +2,8 @@
 
 	Fixed interval GA -> runcase -> problemGen
 
+
+
 ```python
 
 final_pop = ea.evolve(generator=prob_bi.generator, 
