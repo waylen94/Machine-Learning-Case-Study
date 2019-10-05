@@ -7,7 +7,7 @@
 
 	[Optimization](https://en.wikipedia.org/wiki/Gradient_descent)
 	
-	**Brief**
+**Brief**
 	
 	 	Input -> Process layer 1 2 3 ......-> Results
 			result provide feedback (reward) 
@@ -15,12 +15,12 @@
 			example(Training data) -> Training
 			final(testing data) -> testing
 	
-	**Definition**:
+**Definition**:
 
 	 Artifical neural network(ANN) is a collection of connected artifician neurons, which inspired by Bio-neural network.
 	supervised or not: manualley labeld or not
 	
-	**Method**: 
+**Method**: 
 
 	primarily focus on oprimization method 
 			Gradient Descent
@@ -32,13 +32,13 @@
 
 ## Preparation(Tensor Flow):
 
-	Installation
+Installation
 
-	'''
+	```
 		pip3 install --upgrade tensorflow
 
 		import tensorflow
-	'''
+	```
 
 	Input(example) -> Output(Results)
 	usage: prediction
