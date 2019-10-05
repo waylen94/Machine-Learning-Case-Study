@@ -112,7 +112,7 @@ overview graph:       as well as components graph:
 
 
 ## Advanced Content
-1. classification solution case
+#### 1. classification solution case
 	regression problem sovling -> output value
 	classification problem solving -> output possiblity
 
@@ -128,14 +128,14 @@ overview graph:       as well as components graph:
 
 [Full code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0917_advanced_classification.py)
 
-2. solving overfitting
+#### 2. solving overfitting
 ![diagram from MOFAN](https://morvanzhou.github.io/static/results/tensorflow/5_02_1.png)
 	For general situation rather than specific training data
 	states: underfit just_right overfit
 	Tensorflow solve: drop out
 [Full code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0917_advanced_overfitting.py)
 
-3. Convoltutional neural network(CNN)
+#### 3. Convoltutional neural network(CNN)
 	Purpose: image text vedio (computer vision recognization
 	
 	Method: object Components.s.s -> combine -> combine ..->.->.... -> object classfied
@@ -146,7 +146,7 @@ overview graph:       as well as components graph:
 
 [great resource](https://classroom.udacity.com/courses/ud730/lessons/6377263405/concepts/64063017560923)
 
-4. CNN buidling 1
+#### 4. CNN buidling 1
 	**code concept**:image recognition, gradually compress hight and width in order to increase thickness (processing data in validation below 'cp') 
 	
 	CNN filtering quintessence
@@ -160,7 +160,7 @@ overview graph:       as well as components graph:
 	padding method: valid padding ; same padding
 	pooling method: max pooling ; average pooling
 
-5. CNN building 2
+#### 5. CNN building 2
 	TensorFlow Libraries implment CNN
 	conv2a function
 	pooling module
@@ -168,13 +168,13 @@ overview graph:       as well as components graph:
 	key features: stride, patch, padding, pooling 
 [Full code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0917_advanced_CNN2.py)
 
-6. CNN building 3
+#### 6. CNN building 3
 	feeling: capture data -> reframe(reshape) data -> optimizer data
 	practical: padding, pooling, conv2d, adamoptimizer 
 
 [Full code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0917_advanced_CNN3.py)
 
-7. Saver
+#### 7. Saver
 
 	purpose: store the trained parameter like(weights and biases)
 	issue: save parameters -> reload parameters
@@ -182,7 +182,7 @@ overview graph:       as well as components graph:
 
 [Full code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0917_advanced_saver.py)
 
-8. Recurrent Neural Network (RNN) 1
+#### 8. Recurrent Neural Network (RNN) 1
 	key: order matter issue solutions (sentence)
 
 	common method: long term short term memory (LSTM)
@@ -198,7 +198,7 @@ overview graph:       as well as components graph:
 [resource1](https://classroom.udacity.com/courses/ud730/lessons/6377263405/concepts/64063017560923#)
 [resource2](https://classroom.udacity.com/courses/ud730/lessons/6378983156/concepts/63770919610923#)	
 
-9. Recurrent Neural Network (RNN) 2 Classification
+#### 9. Recurrent Neural Network (RNN) 2 Classification
 RNN LSTM
 	
 	inputs hiden layer -> Cell -> outputs hiden layer
@@ -224,7 +224,7 @@ Noremal style or Tensorflow style
 [Extensive BPTT](https://r2rt.com/styles-of-truncated-backpropagation.html)
 
 
-10. Recurrent Neural Network (RNN) 3 Regression
+#### 10. Recurrent Neural Network (RNN) 3 Regression
 
 	1. data handling --- batch
 	2. LSTM (input, cell, output)
@@ -253,14 +253,14 @@ RNN key: Truncate Backpropagration  Again:
 [Full Code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0919_advanced_RNN_2.py)
 
 
-11. Recurrent Neural Network (RNN) 4 Visualization
+#### 11. Recurrent Neural Network (RNN) 4 Visualization
 	
 	plt_plot()
 
 [Full Code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0919_advanced_Aensorflow_visualization.py)
 
 
-12. Autoencoder
+#### 12. Autoencoder
 	Much like PCA
 	it is unsupervised learning
 	feel like trained compiler
@@ -273,7 +273,7 @@ RNN key: Truncate Backpropagration  Again:
 
 [Full Code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_0919_advanced_Autoencoder.py)
 
-13. Scope
+#### 13. Scope
 	corresponded with variable
 	'''
 	tf.name_scope
@@ -295,7 +295,7 @@ RNN key: Truncate Backpropagration  Again:
 
 
 
-14. Batch Normalization (BN)
+#### 14. Batch Normalization (BN)
 	significance: if not, neurons lose efficacy, sensor capacity vanish
 	procedure:forwarding layer process BN after every time activation function
 
@@ -307,7 +307,7 @@ RNN key: Truncate Backpropagration  Again:
 
 
 
-15. Transfer Learning 
+#### 15. Transfer Learning 
 
 (continum to learn when start again these bracket should be vanished)
 
