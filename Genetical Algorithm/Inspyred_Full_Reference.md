@@ -10,6 +10,7 @@ II. customized
 III. advanced 
 
 I.	Standard Algorithm
+
 	1.	Genetic algorithm
 	2.	Evolution strategy
 	3.	Simulated annealing
