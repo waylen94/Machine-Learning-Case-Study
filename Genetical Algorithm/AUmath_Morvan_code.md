@@ -1,21 +1,26 @@
-#Genetical Algorithm
+#Genetical Algorithm learning record
 
-**resource from Au.mathworks**
+**resource from Au.mathworks + Morvan form below**
+
+[AU Mathworks GA](https://au.mathworks.com/help/gads/how-the-genetic-algorithm-works.html)
+[Morvan GA](https://morvanzhou.github.io/)
 
 Biological Evolution
 
 1. Selection
+
 2. Crossover
+
 3. Mutation
 
 Terminology:
 
-	Fitness: objective function
-	Individuals: Apply fitness function
-	Populations and Generations: array of individuals
-	Diversity: distance between individuals
-	Fitness value: value of fitness
-	Parent and Children: individuas enable reproduce
+* Fitness: objective function
+* Individuals: Apply fitness function
+* Populations and Generations: array of individuals
+* Diversity: distance between individuals
+* Fitness value: value of fitness
+* Parent and Children: individuas enable reproduce
 
 Outline of the Algorithm:
 
@@ -23,7 +28,10 @@ Outline of the Algorithm:
 		Eliteare 	individuals 	crossover 	mutation
 
 	Terminar condition
-		Generations ; time; fitness limit; tolerance
+		Generations ; 
+		time; 
+		fitness limit; 
+		tolerance
 
 **resource from Media**
 
@@ -44,7 +52,7 @@ Generate the initial population
 		Until population has converged
 			Stop
 
-**Morvan Version Code**
+**Morvan Version Learning Code**
 
 Functions:
 
