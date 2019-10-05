@@ -55,7 +55,7 @@
 	key idea of TF: error back-propagation algorithm through optimization method
 	optimization method this time: gradient descent
 
-[Full Code](https://github.com/MorvanZhou/tutorials/blob/master/tensorflowTUT/tf5_example2/full_code.py)
+[Full Code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_UseCase_001.py)
 
 #### tf Session
 [FuLL Code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_UseCase_session.py)
