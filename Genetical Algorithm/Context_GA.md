@@ -3,7 +3,7 @@
 	Fixed interval GA -> runcase -> problemGen
 
 
-
+![context_GA_procedure](https://raw.githubusercontent.com/waylen94/Machine-Learning-Case-Study/master/Genetical%20Algorithm/context_GA_procedure_version_2.png)
 ```python
 
 final_pop = ea.evolve(generator=prob_bi.generator, 
