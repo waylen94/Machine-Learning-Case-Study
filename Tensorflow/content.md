@@ -5,7 +5,7 @@
 
 ## Introduction [Artifical Neural Network](https://en.wikipedia.org/wiki/Artificial_neural_network)
 
-	[Optimization](https://en.wikipedia.org/wiki/Gradient_descent)
+[Optimization](https://en.wikipedia.org/wiki/Gradient_descent)
 	
 **Brief**
 	
