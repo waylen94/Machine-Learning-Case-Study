@@ -113,6 +113,7 @@ represent shared, persistent, state manipulated by the program
 	Scope decide (Creating new OR reuse existing ones)
 
 ## Graphs and Sessions
+
 **Concept**: dataflwo graph represent your comutationin terms of the dependencies between individual operations 
 
 **low level programming model** 
@@ -165,18 +166,18 @@ placting operations on different devices tf.device
 ## Save and Restore
 	tf.train.Saver    operating **save** and **restore**
 
-	**Save and Restore variables**
+**Save and Restore variables**
 		tf.train.Saver
 			tf.train.Saver.save
 			tf.train.Saver.restore
 
-	**Specific variables to save and restore**
+**Specific variables to save and restore**
 
-	**Inspect variables in a checkpoint**
+**Inspect variables in a checkpoint**
 
-	**save and restore model**
+**save and restore model**
 
-	**Build and load a SavedModel** Model can be used in other infrastructure (device) based framework
+**Build and load a SavedModel** Model can be used in other infrastructure (device) based framework
 		~~more about save restore model~~
 		
 ## Control Flow
