@@ -7,16 +7,22 @@
 
 	[Optimization](https://en.wikipedia.org/wiki/Gradient_descent)
 	
-	**Brief**: Input -> Process layer 1 2 3 ......-> Results
+	**Brief**
+	
+	 	Input -> Process layer 1 2 3 ......-> Results
 			result provide feedback (reward) 
 			Activation function
 			example(Training data) -> Training
 			final(testing data) -> testing
 	
-	**Definition**: Artifical neural network(ANN) is a collection of connected artifician neurons, which inspired by Bio-neural network.
+	**Definition**:
+
+	 Artifical neural network(ANN) is a collection of connected artifician neurons, which inspired by Bio-neural network.
 	supervised or not: manualley labeld or not
 	
-	**Method**: primarily focus on oprimization method 
+	**Method**: 
+
+	primarily focus on oprimization method 
 			Gradient Descent
 			Cost function
 			obtaining Global minimum or local Minimum
@@ -25,22 +31,27 @@
 			asymptotic rate of convergence is inferior???
 
 ## Preparation(Tensor Flow):
+
 	Installation
+
 	'''
 		pip3 install --upgrade tensorflow
 
 		import tensorflow
 	'''
-	Input(example) -> Output(Results)
 
+	Input(example) -> Output(Results)
 	usage: prediction
 
 	overfitting line 
+
 [more](https://en.wikipedia.org/wiki/Overfitting)
+
 	underfitting line
 
 ## Basis Architecture
 #### tensor flow basis
+
 	input -> hide layer -> output
 	1. input : dataset 1 2 3 4.......
 	2. hide layer: weights, biases, activation rules
@@ -57,18 +68,19 @@
 [Full Code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_UseCase_001.py)
 
 #### tf Session
+
 [FuLL Code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_UseCase_session.py)
+
 #### tf Variable
+
 [Full Code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_UseCase_variable.py)
+
 #### tf Placeholder
 
 #### tf Activation Function
 
-
-
 #### manual add layer
 [Full code](https://github.com/waylen94/Machine-Learning-Case-Study/blob/master/Tensorflow/TensorFlow_add_layer.py)
-
 
 #### Basis TensorFlow
 	1. basis architecture
@@ -133,6 +145,7 @@ overview graph:       as well as components graph:
 	example: image->covolution->max pooling->connected -> classified
 
 [great resource](https://classroom.udacity.com/courses/ud730/lessons/6377263405/concepts/64063017560923)
+
 4. CNN buidling 1
 	**code concept**:image recognition, gradually compress hight and width in order to increase thickness (processing data in validation below 'cp') 
 	
@@ -212,6 +225,7 @@ Noremal style or Tensorflow style
 
 
 10. Recurrent Neural Network (RNN) 3 Regression
+
 	1. data handling --- batch
 	2. LSTM (input, cell, output)
 	3. Optimizer
@@ -296,7 +310,6 @@ RNN key: Truncate Backpropagration  Again:
 15. Transfer Learning 
 
 (continum to learn when start again these bracket should be vanished)
-	
 
 	current exsited model to operate
 	
