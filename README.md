@@ -1,8 +1,5 @@
 # Machine-Learning-Case-Study
 
-
-
-
 # concrete content
 
 

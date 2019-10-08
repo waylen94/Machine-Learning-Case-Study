@@ -55,6 +55,45 @@ final_pop = ea.evolve(generator=prob_bi.generator,
             fitness.append(emo.Pareto([f1, float(f2/self.sim_num), f3])) # a Pareto multi-objective solution
 
         return fitness
+
+
+
+         """Represents a Pareto multiobjective solution.
+    
+    A Pareto solution is a set of multiobjective values that can be 
+    compared to other Pareto values using Pareto preference. This means 
+    that a solution dominates, or is better than, another solution if it 
+    is better than or equal to the other solution in all objectives and
+    strictly better in at least one objective.
+    
+    Since some problems may mix maximization and minimization among
+    different objectives, an optional `maximize` parameter may be
+    passed upon construction of the Pareto object. This parameter
+    may be a list of Booleans of the same length as the set of 
+    objective values. If this parameter is used, then the `maximize`
+    parameter of the evolutionary computation's ``evolve`` method 
+    should be left as the default True value in order to avoid
+    confusion. (Setting the `evolve`'s parameter to False would
+    essentially invert all of the Booleans in the Pareto `maximize`
+    list.) So, if all objectives are of the same type (either
+    maximization or minimization), then it is best simply to use
+    the `maximize` parameter of the `evolve` method and to leave
+    the `maximize` parameter of the Pareto initialization set to
+    its default True value. However, if the objectives are mixed
+    maximization and minimization, it is best to leave the ``evolve``'s
+    `maximize` parameter set to its default True value and specify
+    the Pareto's `maximize` list to the appropriate Booleans.
+    
+    The typical usage is as follows::
+    
+        @inspyred.ec.evaluators.evaluator
+        def my_evaluator(candidate, args):
+            obj1 = 1 # Calculate objective 1
+            obj2 = 2 # Calculate objective 2
+            obj3 = 3 # Calculate objective 3
+            return emo.Pareto([obj1, obj2, obj3])
+    
+    """
 ```
 
 ## Observer
@@ -73,6 +112,9 @@ final_pop = ea.evolve(generator=prob_bi.generator,
 ## Selector
 
 	NSGA2 based Tournament_selection
+
+    Key:
+    
 ```python
 	ea = inspyred.ec.emo.NSGA2(prng)
 
@@ -116,16 +158,98 @@ final_pop = ea.evolve(generator=prob_bi.generator,
 ```
 ## Variator
 
+
+    Key:
+
+
 	Crossover: n-point-crossover
 	Mutation: bit_flip_mutation
 ```python
 	ea.variator = [inspyred.ec.variators.n_point_crossover, 
                    inspyred.ec.variators.bit_flip_mutation]
+
+
+    @crossover
+def n_point_crossover(random, mom, dad, args):
+    """Return the offspring of n-point crossover on the candidates.
+
+    This function performs n-point crossover (NPX). It selects *n* 
+    random points without replacement at which to 'cut' the candidate 
+    solutions and recombine them.
+
+    .. Arguments:
+       random -- the random number generator object
+       mom -- the first parent candidate
+       dad -- the second parent candidate
+       args -- a dictionary of keyword arguments
+
+    Optional keyword arguments in args:
+    
+    - *crossover_rate* -- the rate at which crossover is performed 
+      (default 1.0)
+    - *num_crossover_points* -- the number of crossover points used (default 1)
+    
+    """
+    crossover_rate = args.setdefault('crossover_rate', 1.0)
+    num_crossover_points = args.setdefault('num_crossover_points', 1)
+    children = []
+    if random.random() < crossover_rate:
+        num_cuts = min(len(mom)-1, num_crossover_points)
+        cut_points = random.sample(range(1, len(mom)), num_cuts)
+        cut_points.sort()
+        bro = copy.copy(dad)
+        sis = copy.copy(mom)
+        normal = True
+        for i, (m, d) in enumerate(zip(mom, dad)):
+            if i in cut_points:
+                normal = not normal
+            if not normal:
+                bro[i] = m
+                sis[i] = d
+        children.append(bro)
+        children.append(sis)
+    else:
+        children.append(mom)
+        children.append(dad)
+    return children
+    
+
+
+    @mutator
+def bit_flip_mutation(random, candidate, args):
+    """Return the mutants produced by bit-flip mutation on the candidates.
+
+    This function performs bit-flip mutation. If a candidate solution contains
+    non-binary values, this function leaves it unchanged.
+
+    .. Arguments:
+       random -- the random number generator object
+       candidate -- the candidate solution
+       args -- a dictionary of keyword arguments
+
+    Optional keyword arguments in args:
+    
+    - *mutation_rate* -- the rate at which mutation is performed (default 0.1)
+    
+    The mutation rate is applied on a bit by bit basis.
+    
+    """
+    rate = args.setdefault('mutation_rate', 0.1)
+    mutant = copy.copy(candidate)
+    if len(mutant) == len([x for x in mutant if x in [0, 1]]):
+        for i, m in enumerate(mutant):
+            if random.random() < rate:
+                mutant[i] = (m + 1) % 2
+    return mutant               
 ```
 
 ## Replacer
 
 	NSGA2_nsga_replacement
+
+
+    Key:
+    
 ```python
 
 	def nsga_replacement(random, population, parents, offspring, args):
@@ -207,6 +331,9 @@ final_pop = ea.evolve(generator=prob_bi.generator,
 ## Archiver 
 
 	NSGA2 based best-archiver
+
+    Key:
+
 ```python
 
 	def best_archiver(random, population, archive, args):
